@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>ABC company</title>
+  </head>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+    }
+    h1 {
+      text-align: center;
+    }
+    main header {
+      text-align: center;
+    }
+    .hr {
+      width: 100%;
+      border: solid 1px #999;
+    }
+    div.input {
+      width: 200px;
+      margin: 20px auto 0;
+    }
+    div.input input {
+      width: 100%;
+      padding: 5px;
+    }
+    div.input .firstname {
+      width: 45%;
+    }
+    div.input .lastname {
+      width: 45%;
+      float: right;
+    }
+    input {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    div.input button {
+      background: #5a7ab3;
+      color: aliceblue;
+      font-size: 18px;
+      width: 100%;
+      padding: 10px;
+    }
+    div.input.login {
+      text-align: center;
+    }
+    .login a {
+      color: black;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>ABC company</h1>
+      <div class="hr"></div>
+    </header>
+
+    <main>
+      <form action="">
+        <div class="input">
+          <span>Username</span>
+          <div>
+            <input
+              class="firstname"
+              type="text"
+              placeholder="Firstname"
+            /><input class="lastname" type="text" placeholder="Lastname" />
+          </div>
+        </div>
+
+        <div class="input">
+          <span>e-mail</span>
+          <div><input type="text" placeholder="example@example.org" /></div>
+        </div>
+
+        <div class="input">
+          <span>phone number</span>
+          <div><input type="text" /></div>
+        </div>
+
+        <div class="input">
+          <span>password</span>
+          <div><input type="password" placeholder="8-20 Characters" /></div>
+        </div>
+
+        <div class="input">
+          <span>password(again)</span>
+          <div><input type="password" /></div>
+        </div>
+
+        <div class="input"><button>Sign Up</button></div>
+      </form>
+      <div class="login input"><a href="">Login</a></div>
+    </main>
+  </body>
+</html>
