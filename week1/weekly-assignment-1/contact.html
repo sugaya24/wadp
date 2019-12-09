@@ -10,6 +10,61 @@
     />
     <title>Paris</title>
   </head>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-image: url('./img/what-the-hex.png');
+      background-repeat: repeat;
+      width: 960px;
+      margin: 0 auto;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    header li {
+      padding: 5px 10px 5px;
+      border-right: solid 1px #ccc;
+    }
+    header li:last-child {
+      border-right: none;
+    }
+    .form {
+      background-color: #fff;
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+    .form .container {
+      width: 322px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    input {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 1px;
+    }
+    textarea {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 1px;
+    }
+    button {
+      background-color: #297ca0;
+      color: whitesmoke;
+      border: none;
+      border-radius: 1px;
+      width: 80px;
+      height: 30px;
+    }
+  </style>
   <body>
     <header>
       <h1>Paris</h1>
@@ -23,23 +78,31 @@
     </header>
 
     <main>
-      <form action="">
-        <div>
-          <div>Name</div>
-          <input type="text" />
+      <div class="form">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <div>
+              <button>Submit</button>
+            </div>
+          </form>
         </div>
-        <div>
-          <div>e-mail</div>
-          <input type="text" />
-        </div>
-        <div>
-          <div>message</div>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-          <button>Submit</button>
-        </div>
-      </form>
+      </div>
     </main>
   </body>
 </html>
