@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+}
+.hr {
+  width: 100%;
+  margin: 20px 0 20px;
+  border-bottom: solid 1px lightgray;
+}
+
+body {
+  font-family: 'Alegreya', serif;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 960px;
+  position: fixed;
+  top: 0;
+}
+
+.menu {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.menu li {
+  font-family: 'Lato', sans-serif;
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #d64161;
+  margin-right: 20px;
+  border-radius: 2px;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li:hover {
+  background-color: #6b5b95;
+}
+
+main {
+  padding-top: 80px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.profile {
+  width: 25%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  margin-right: 20px;
+}
+
+.profile:last-child {
+  margin-right: 0;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px dotted #ff7b25;
+}
+
+.profile .img {
+  text-align: center;
+}
+
+.profile p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.auto {
+  height: 200px;
+  overflow: scroll;
+}
+
+footer {
+  position: fixed;
+  width: 960px;
+  bottom: 0;
+  color: lightgray;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer span {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 18px;
+}
