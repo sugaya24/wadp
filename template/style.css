@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Cherry Bomb', cursive; */
+}
+
+body {
+  font-family: 'Alegreya', serif;
+  /* font-family: 'Solway', serif; */
+  width: 100%;
+}
+
+.hr {
+  border-bottom: 1px solid #eee;
+}
+
+/* ================================== */

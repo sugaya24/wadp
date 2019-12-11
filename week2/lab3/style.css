@@ -1,0 +1,192 @@
+/* Color Hunt */
+/* https://colorhunt.co/palette/165518 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Cherry Bomb', cursive; */
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: 'Alegreya', serif;
+  /* font-family: 'Solway', serif; */
+  width: 100%;
+}
+
+.hr {
+  border-bottom: 1px solid #eee;
+}
+.border {
+  border: 1px solid #999;
+}
+
+/* ================================== */
+header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 150px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-right: 10px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main .outline {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 2px;
+}
+
+main .outline .box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 2px;
+  background-color: #f4b0c7;
+  transition-duration: 1s;
+}
+
+main .outline .box:hover {
+  cursor: pointer;
+}
+
+main .outline .box:nth-child(1):hover {
+  transform: translateX(50px);
+}
+
+main .outline .box:nth-child(2):hover {
+  transform: scale(2, 2);
+}
+
+main .outline .box:nth-child(3):hover {
+  transform: rotateX(180deg);
+}
+
+main .outline .box:nth-child(4):hover {
+  transform: rotateZ(180deg);
+}
+
+main .outline .box:nth-child(5):hover {
+  transform: rotateY(90deg);
+}
+
+main .outline .box:nth-child(6):hover {
+  background-color: #6c7b95;
+}
+
+@keyframes slideX {
+  from {
+    transform: translateX(20px);
+  }
+
+  to {
+    transform: translateX(700px);
+  }
+}
+
+main .outline .box:nth-child(7):hover {
+  animation: slideX 3s infinite;
+}
+
+main .outline .box:nth-child(8) {
+  /* border-radius: 50%; */
+}
+
+@keyframes anime {
+  0% {
+    transform: rotate(0deg); /* 角度指定 */
+  }
+  100% {
+    transform: rotate(360deg); /* 角度指定 */
+  }
+}
+
+main .outline .box:nth-child(8):hover {
+  border-radius: 50%;
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 80%);
+  animation: anime 2s linear infinite;
+}
+
+@keyframes bounce {
+  from {
+    border-radius: 40%;
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.15, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.05, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+    border-radius: 2px;
+  }
+}
+
+main .outline .box:nth-child(9):hover {
+  animation: bounce 1s;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #6c7b95;
+  width: 100%;
+  line-height: 50px;
+  background-color: #c7f0db;
+}
