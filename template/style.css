@@ -1,3 +1,6 @@
+/* Color Hunt */
+/* https://colorhunt.co/palette/165518 */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +16,11 @@ h6 {
   /* font-family: 'Cherry Bomb', cursive; */
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   font-family: 'Alegreya', serif;
   /* font-family: 'Solway', serif; */
@@ -22,5 +30,49 @@ body {
 .hr {
   border-bottom: 1px solid #eee;
 }
+.bo {
+  border: 1px solid black;
+}
 
 /* ================================== */
+header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  line-height: 150px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-right: 10px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #6c7b95;
+  width: 100%;
+  line-height: 50px;
+  background-color: #c7f0db;
+}
