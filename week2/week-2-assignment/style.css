@@ -1,0 +1,135 @@
+header a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: darkblue;
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+h2,
+h3 {
+  font-family: 'Lobster', cursive;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  height: 20px;
+  bottom: 0;
+  width: 95%;
+}
+
+body {
+  height: 100%;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+/* main */
+.hr {
+  border-bottom: 1px solid #ccc;
+}
+main {
+  width: 960px;
+  margin: 0 auto;
+}
+main h2 {
+  font-size: 48px;
+}
+main h3 {
+  font-size: 32px;
+}
+main h4 {
+  font-size: 24px;
+}
+.border {
+  border: 1px solid #333;
+  border-radius: 2px;
+  padding: 5px;
+}
+section {
+  margin-bottom: 100px;
+}
+
+pre {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  overflow-y: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  background: #efefef;
+  /* border: 1px solid #777; */
+}
+pre code {
+  padding: 10px;
+  color: #333;
+  font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco,
+    Consolas, monospace;
+}
+
+#hover a:hover {
+  color: orange;
+}
+
+#active span {
+  cursor: pointer;
+  user-select: none;
+}
+#active span:active {
+  background-color: red;
+  color: white;
+}
+
+#disabled input:disabled {
+  background: #ccc;
+}
+
+#nth-child li:nth-child(2) {
+  color: orange;
+}
+#nth-child li:nth-child(4n) {
+  color: lime;
+}
+
+#visited a:visited {
+  color: green;
+}
+
+#before .p::before {
+  content: '♥';
+}
+
+#after a::after {
+  content: '→';
+}
+
+#first-letter .p::first-letter {
+  font-size: 200%;
+}

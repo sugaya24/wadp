@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>CSS Tutorial</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="basics.html">Basics</a>
+        <a href="intermediate.html">Intermediate</a>
+        <a href="advanced.html">Advanced</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Pseudo-classes</h2>
+      <section id="hover">
+        <h3>:hover</h3>
+        <div class="explain">
+          <p>
+            The :hover CSS pseudo-class matches when the user interacts with an
+            element with a pointing device, but does not necessarily activate
+            it. It is generally triggered when the user hovers over an element
+            with the cursor (mouse pointer).
+          </p>
+        </div>
+        <div class="example"></div>
+        <h4>Code</h4>
+        <div class="code">
+          <pre>
+          <code class="codeprint">
+            /* Selects any &lt;a&gt; element when "hovered" */
+            a:hover {
+              color: orange;
+            }</code>
+        </pre>
+        </div>
+        <h4>Result</h4>
+        <div class="result">
+          <a href="#">Hover.com</a>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="active">
+        <h3>:active</h3>
+        <div class="explain">
+          <p>The :active CSS pseudo-class represents an element (such as a button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse button.</p>
+        </div>
+        <div class="example"></div>
+        <h4>Code</h4>
+        <div class="code">
+          <pre>
+            <code class="codeprint">
+              /* Selects any <a> that is being activated */
+              a:active {
+                background-color: red;
+              }</code>
+          </pre>
+        </div>
+        <h4>Result</h4>
+        <div class="reulst">
+          <span class="border">Click me</span>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="disabled">
+        <h3>:disabled</h3>
+        <div class="explain">
+          <p>The :disabled CSS pseudo-class represents any disabled element. An element is disabled if it can't be activated (selected, clicked on, typed into, etc.) or accept focus. The element also has an enabled state, in which it can be activated or accept focus.</p>
+        </div>
+        <div class="example"></div>
+        <h4>Code</h4>
+        <div class="code">
+          <pre>
+            <code class="codeprint">
+              /* Selects any disabled &lt;input&gt; */
+              input:disabled {
+                background: #ccc;
+              }</code>
+          </pre>
+        </div>
+        <h4>Result</h4>
+        <div id="" class="reulst">
+          <form action="">
+            Name: <input type="text"><br>
+            Email: <input type="text"><br>
+            Phone: <input type="text" disabled="disabled"> // disabled
+          </form>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="nth-child">
+        <h3>:nth-child</h3>
+        <div class="explain">
+          <p>The :nth-child() CSS pseudo-class matches elements based on their position in a group of siblings.</p>
+        </div>
+        <div class="example"></div>
+        <h4>Code</h4>
+        <div  borderclass="code">
+          <pre>
+            <code class="codeprint">
+              /* Selects the second &lt;li&gt; element in a list */
+              li:nth-child(2) { 
+                color: orange;
+              }
+              
+              /* Selects every fourth element
+                  among any group of siblings */
+              li:nth-child(4n) {
+                color: lime;
+              }</code>
+          </pre>
+        </div>
+        <h4>Result</h4>
+        <div id="" class="reulst">
+          <ol>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+            <li>nth-child</li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="visited">
+        <h3>visited</h3>
+        <div class="explain">
+          <p>The :visited CSS pseudo-class represents links that the user has already visited. For privacy reasons, the styles that can be modified using this selector are very limited.</p>
+        </div>
+        <div c borderlass="example"></div>
+        <h4>Code</h4>
+        <div class="code">
+          <pre>
+            <code class="codeprint">
+              /* Selects any &lt;a&gt; that has been visited */
+              a:visited {
+                color: green;
+              }</code>
+          </pre>
+        </div>
+        <h4>Result</h4>
+        <div class="reulst">
+          <a href="#visited">visited.com</a>
+        </div>
+      </section>
+
+      <!-- Pseudo-elements  -->
+      <h2>Pseudo-elements</h2>
+      <section id="before">
+        <h3>::before</h3>
+        <div class="explain">
+          <p>In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.</p>
+        </div>
+        <div class="example"></div>
+        <h4>Code</h4>
+        <div class="code">
+          <pre>
+            <code class="codeprint">
+              /* Add a heart before paragraph */
+              p::before {
+                content: "♥";
+              }</code>
+          </pre>
+        </div>
+        <h4>Result</h4>
+        <div class="reulst">
+          <p class="p">Hello world!!</p>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="after">
+        <h3>::after</h3>
+        <div class="explain">
+          <p>In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.</p>
+        </div>
+        <div c borderlass="example"></div>
+        <h4>Code</h4>
+        <div class="code">
+          <pre>
+            <code class="codeprint">
+              /* Add an arrow after links */
+              a::after {
+                content: "→";
+              }</code>
+          </pre>
+        </div>
+        <h4>Result</h4>
+        <div class="reulst">
+          <a href="#after">after.com</a>
+        </div>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="first-letter">
+        <h3>::first-letter</h3>
+        <div class="explain">
+          <p>The ::first-letter CSS pseudo-element applies styles to the first letter of the first line of a block-level element, but only when not preceded by other content (such as images or inline tables).</p>
+        </div>
+        <div c borderlass="example"></div>
+        <h4>Code</h4>
+        <div class="code">
+          <pre>
+            <code class="codeprint">
+              /* Selects the first letter of a &lt;p&gt; */
+              p::first-letter {
+                font-size: 130%;
+              }</code>
+          </pre>
+        </div>
+        <h4>Result</h4>
+        <div class="reulst">
+          <p class="p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>Team D: Chris, Henry and Yuki</p>
+    </footer>
+  </body>
+</html>
