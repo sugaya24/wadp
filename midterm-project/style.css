@@ -1,0 +1,257 @@
+body {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* width: 660px; */
+}
+
+/* header */
+header {
+  line-height: 65px;
+  width: 100%;
+  height: 65px;
+  box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.1);
+}
+header .container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 1192px;
+  margin: 0 auto;
+}
+header .logo {
+  font-family: 'Open Sans';
+  font-size: 32px;
+  font-weight: 800;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .menu i {
+  margin-right: 20px;
+  color: gray;
+}
+header .menu .button {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  height: 30px;
+  margin-right: 20px;
+  padding: 4px 12px;
+  border: 1px solid #666;
+  border-radius: 4px;
+}
+header img {
+  position: relative;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* main */
+main {
+  width: 680px;
+  margin: 70px auto 0;
+  padding: 0 24px;
+}
+main .profile {
+  height: 197px;
+  margin-bottom: 30px;
+}
+main .profile img {
+  float: right;
+  width: 128px;
+  height: 128px;
+  padding: 5px;
+  border: 2px solid rgba(3, 168, 124, 1);
+  border-radius: 50%;
+}
+main .profile .name {
+  display: flex;
+  align-items: center;
+  margin: 8px auto;
+}
+main .profile h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+main .profile .button {
+  height: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: rgba(3, 168, 124, 1);
+  border: 1px solid rgba(3, 168, 124, 1);
+  border-radius: 4px;
+}
+main .profile p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.76);
+}
+main .profile a {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.76);
+}
+main .tags {
+  font-size: small;
+  line-height: 20px;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+main .tags a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+main .tags a:hover {
+  text-decoration: underline;
+}
+main .social {
+  font-size: small;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+main .social a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* tabs */
+main .tabs {
+  font-family: sans-serif;
+  font-size: small;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+main .tabs ul {
+  display: flex;
+  color: rgba(0, 0, 0, 0.54);
+}
+main .tabs li {
+  margin-right: 20px;
+}
+
+main h4 {
+  font-family: sans-serif;
+  font-size: larger;
+  font-weight: 700;
+  padding: 40px 0 12px 0;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+/* .featured */
+.featured {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contributor {
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+}
+.contributor .icon {
+  display: flex;
+}
+.contributor .icon > div {
+  margin-left: 10px;
+}
+.contributor .icon p {
+  line-height: 20px;
+  margin-top: 2px;
+}
+.contributor .icon a {
+  text-decoration: none;
+}
+.contributor .icon .name a {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.84);
+}
+.contributor .icon .date {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.54);
+}
+.contributor .icon .date a {
+  color: rgba(0, 0, 0, 0.54);
+}
+.contributor .icon .date .fa-star {
+  margin-left: 4px;
+}
+.contributor .fa-star {
+  color: rgba(0, 0, 0, 0.54);
+}
+.contributor .icon img {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border: 1px solid rgba(3, 168, 124, 1);
+  border-radius: 50%;
+}
+.contributor .icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.ogp img {
+  width: 100%;
+}
+
+main section {
+  font-family: sans-serif;
+  width: 630px;
+  margin-top: 32px;
+  padding: 0 24px 0 24px;
+}
+main section h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 18.36px;
+  color: rgba(0, 0, 0, 0.84);
+}
+main section h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 11.04px;
+  color: #666;
+}
+main .response {
+  display: flex;
+  justify-content: space-between;
+  width: 630px;
+  padding: 24px 24px 23px 24px;
+}
+main .response .applause {
+  display: flex;
+}
+main .response .fa-sign-language {
+  padding-right: 10px;
+}
+main .response h5 {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+main .response .count {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+main .response .fa-bookmark {
+  padding-left: 10px;
+}
+
+/* latest */
+.latest {
+  margin-bottom: 24px;
+}
