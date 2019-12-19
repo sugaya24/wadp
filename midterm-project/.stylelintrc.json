@@ -1,12 +1,10 @@
 {
   "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-recess-order",
-    "stylelint-prettier/recommended"
+    "stylelint-config-recess-order"
   ],
   "rules": {
       "indentation": 2,
-      "string-quotes": "single",
+      "string-quotes": "double",
       "no-duplicate-selectors": true,
       "color-hex-case": "lower",
       "color-hex-length": "long",
@@ -22,7 +20,7 @@
       "selector-attribute-brackets-space-inside": "always",
       "declaration-block-trailing-semicolon": "always",
       "declaration-no-important": true,
-      "declaration-colon-space-before": "always",
+      "declaration-colon-space-before": "never",
       "declaration-colon-space-after": "always",
       "property-no-vendor-prefix": true,
       "value-no-vendor-prefix": true,
@@ -30,11 +28,13 @@
       "function-url-quotes": "always",
       "function-url-data-uris": "always",
       "font-weight-notation": "numeric",
-      "font-family-name-quotes": "always-where-required",
+      "font-family-name-quotes": "always-where-recommended",
       "comment-whitespace-inside": "always",
       "comment-empty-line-before": "always",
       "at-rule-no-vendor-prefix": true,
-      "rule-empty-line-before": "always",
+      "rule-empty-line-before": ["always", { 
+        "except": ["after-single-line-comment"]
+      }],
       "selector-pseudo-element-colon-notation": "double",
       "selector-pseudo-class-parentheses-space-inside": "always",
       "selector-no-vendor-prefix": true,
