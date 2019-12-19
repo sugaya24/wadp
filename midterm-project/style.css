@@ -66,6 +66,10 @@ main .profile {
   margin-bottom: 30px;
 }
 
+.profileWrapper {
+  width: 512px;
+}
+
 main .profile img {
   float: right;
   width: 128px;
