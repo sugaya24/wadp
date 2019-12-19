@@ -139,7 +139,6 @@ main .social a {
 
 /* tabs */
 .tabs {
-  padding-bottom: 10px;
   font-family: sans-serif;
   font-size: small;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -147,11 +146,31 @@ main .social a {
 
 .tabs ul {
   display: flex;
+  margin-bottom: -1px;
   color: rgba(0, 0, 0, 0.54);
 }
 
 .tabs li {
   margin-right: 20px;
+}
+
+.tabs li a {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+
+.tabs .tab1 a {
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.tabs li:hover {
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.tabs li:first-child {
+  padding-bottom: 8px;
+  color: rgba(0, 0, 0, 0.84);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.84);
 }
 
 main h4 {
