@@ -167,7 +167,7 @@ main .social a {
   color: rgba(0, 0, 0, 0.84);
 }
 
-.tabs li:hover {
+.tabs li a:hover {
   color: rgba(0, 0, 0, 0.84);
 }
 
