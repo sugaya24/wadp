@@ -1,0 +1,311 @@
+body {
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1192px;
+  margin: 0 auto;
+}
+
+header .logo {
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 800;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .menu i {
+  margin-right: 20px;
+  color: rgba(128, 128, 128, 1);
+}
+
+header .menu .button {
+  height: 30px;
+  padding: 4px 12px;
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid rgba(102, 102, 102, 1);
+  border-radius: 4px;
+}
+
+header img {
+  position: relative;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* main */
+main {
+  width: 680px;
+  padding: 0 24px;
+  margin: 70px auto 0;
+}
+
+main .profile {
+  height: 197px;
+  margin-bottom: 30px;
+}
+
+.profileWrapper {
+  width: 512px;
+}
+
+main .profile img {
+  float: right;
+  width: 128px;
+  height: 128px;
+  padding: 5px;
+  border: 2px solid rgba(3, 168, 124, 1);
+  border-radius: 50%;
+}
+
+main .profile .name {
+  display: flex;
+  align-items: center;
+  margin: 8px auto;
+}
+
+main .profile h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+main .profile .button {
+  height: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: rgba(3, 168, 124, 1);
+  border: 1px solid rgba(3, 168, 124, 1);
+  border-radius: 4px;
+}
+
+main .profile p {
+  margin-bottom: 16px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+main .profile a {
+  color: rgba(0, 0, 0, 0.76);
+  text-decoration: underline;
+}
+
+main .tags {
+  margin-bottom: 15px;
+  font-size: small;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+main .tags a {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+
+main .tags a:hover {
+  text-decoration: underline;
+}
+
+main .social {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+
+main .social a {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+
+/* tabs */
+.tabs {
+  font-family: sans-serif;
+  font-size: small;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tabs ul {
+  display: flex;
+  margin-bottom: -1px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.tabs li {
+  margin-right: 20px;
+}
+
+.tabs li a {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none;
+}
+
+.tabs .tab1 a {
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.tabs li a:hover {
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.tabs li:first-child {
+  padding-bottom: 8px;
+  color: rgba(0, 0, 0, 0.84);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.84);
+}
+
+main h4 {
+  padding: 40px 0 12px 0;
+  font-family: sans-serif;
+  font-size: larger;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+/* .featured */
+.featured {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contributor {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+  line-height: 40px;
+}
+
+.contributor .icon {
+  display: flex;
+}
+
+.contributor .icon > div {
+  margin-left: 10px;
+}
+
+.contributor .icon p {
+  margin-top: 2px;
+  line-height: 20px;
+}
+
+.contributor .icon a {
+  text-decoration: none;
+}
+
+.contributor .icon .name a {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+.contributor .icon .date {
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.contributor .icon .date a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.contributor .icon .date .fa-star {
+  margin-left: 4px;
+}
+
+.contributor .fa-star {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.contributor .icon img {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border: 1px solid rgba(3, 168, 124, 1);
+  border-radius: 50%;
+}
+
+.ogp img {
+  width: 100%;
+}
+
+main section {
+  width: 630px;
+  padding: 0 24px 0 24px;
+  margin-top: 32px;
+  font-family: sans-serif;
+}
+
+main section h1 {
+  margin-top: 18.36px;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.84);
+}
+
+main section h2 {
+  margin-top: 11.04px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+}
+
+main .response {
+  display: flex;
+  justify-content: space-between;
+  width: 630px;
+  padding: 24px 24px 23px 24px;
+}
+
+main .response .applause {
+  display: flex;
+}
+
+main .response .fa-sign-language {
+  padding-right: 10px;
+}
+
+main .response h5 {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+main .response .count {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+main .response .fa-bookmark {
+  padding-left: 10px;
+}
+
+/* latest */
+.latest {
+  margin-bottom: 24px;
+}
