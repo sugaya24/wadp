@@ -1,0 +1,172 @@
+.border {
+  border: 1px solid black;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  display: block;
+  margin-top: 0.67em;
+  margin-right: 0;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  margin-top: 0.83em;
+  margin-right: 0;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  margin-top: 1em;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  margin-top: 1.33em;
+  margin-right: 0;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* header */
+.logo {
+  text-align: center;
+}
+
+.menu {
+  /* display: flex;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.menu-bar {
+  display: none;
+}
+
+/* main */
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 40px;
+  margin-bottom: 80px;
+}
+
+.heading-image {
+  text-align: center;
+}
+
+article img {
+  width: 95%;
+}
+
+article p {
+  line-height: 1.7;
+}
+
+/* aside */
+aside img {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 960px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 90%;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    margin-bottom: 20px;
+  }
+
+  aside .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-bar {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    display: block;
+  }
+
+  aside .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

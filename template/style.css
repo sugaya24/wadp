@@ -2,8 +2,8 @@
 /* https://colorhunt.co/palette/165518 */
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -17,20 +17,20 @@ h6 {
 }
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
   border-bottom: 1px solid black;
 }
 
 html {
-  min-height: 100%;
   position: relative;
+  min-height: 100%;
 }
 
 body {
-  font-family: 'Alegreya', serif;
   /* font-family: 'Solway', serif; */
   width: 100%;
+  font-family: 'Alegreya', serif;
 }
 
 .hr {
@@ -47,10 +47,10 @@ header {
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
   line-height: 150px;
 }
 
@@ -76,9 +76,9 @@ main {
 footer {
   position: absolute;
   bottom: 0;
-  text-align: center;
-  color: #6c7b95;
   width: 100%;
   line-height: 50px;
+  color: #6c7b95;
+  text-align: center;
   background-color: #c7f0db;
 }
