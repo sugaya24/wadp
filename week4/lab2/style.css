@@ -68,11 +68,21 @@ h4 {
   justify-content: space-around; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .menu li {
   list-style: none;
+}
+
+.menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
 }
 
 .menu-bar {
