@@ -1,0 +1,20 @@
+@import './colors';
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $gray;
+    background-color: $dark-main;
+  }
+  
+  header {
+    background-color: $dark-main;
+  }
+
+  .menu {
+    background-color: $dark-sub-1;
+  }
+
+  footer {
+    background-color: $dark-sub-2;
+  }
+}
