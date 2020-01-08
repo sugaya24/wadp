@@ -1,0 +1,54 @@
+@mixin flex-direction($display: flex, $justify-content: space-around, $flex-direction: row) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+.menu {
+  @include flex-direction()
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: $sub;
+    li {
+      list-style: none;
+    a {
+      color: $black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.menu-bar {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    @include flex-direction($flex-direction: column);
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-bar {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    display: block;
+  }
+}
