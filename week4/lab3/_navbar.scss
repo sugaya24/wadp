@@ -41,12 +41,6 @@
 @media (max-width: 800px) {
   .menu {
     @include flex-direction($flex-direction: column);
-    li {
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
   }
 }
 
